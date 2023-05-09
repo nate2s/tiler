@@ -1,8 +1,7 @@
 ## <b>tiler</b> is a charset and screen editor for the VIC-20
 
-![](img/tiler1.png)
-
-![](img/tiler2.png)
+<img src="img/tiler1.png" width="300">
+<img src="img/tiler2.png" width="300">
 
 ### Build and run in the emulator
 
