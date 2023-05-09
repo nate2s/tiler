@@ -10,7 +10,7 @@
 sh ./build.sh
 ```
 
-The following programs must be installed, with the exception of xvic:
+To build tiler the following programs must be installed, with the exception of xvic:
 
 ```
 vice emulator: xvic
@@ -34,5 +34,7 @@ h:         increment border color
 z:         flip character selection row, visible when overlay is displayed
 1-0:       change color
 m:         bucket fill
-escape:    squelch overlay
+escape:    squelch overlay, or exit save/load mode
+f5:        toggles between save scene and save charset
+f7:        toggles between load scene and load charset
 ```
