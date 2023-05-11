@@ -5,20 +5,6 @@ Use this program to create charsets and screens that can be loaded directly into
 <img src="img/tiler1.png" width="300">
 <img src="img/tiler2.png" width="300">
 
-### Build and run in the emulator
-
-```
-sh ./build.sh
-```
-
-To build tiler the following programs must be installed, with the exception of xvic:
-
-```
-vice emulator  xvic
-assembler      64tass
-cruncher       exomizer
-```
-
 ### Instructions
 
 ```
@@ -38,4 +24,26 @@ m           bucket fill
 escape      squelch overlay, or exit save/load mode
 f5          save scene and save charset
 f7          load scene and load charset
+```
+
+### Run the executable in the emulator
+
+```
+xvic -memory all -ntsc -chdir . -9 your_disk_9.d64 -10 your_disk_10.d64 1201 tiler.prg
+```
+
+### Build the source and run the executable in the emulator
+
+```
+sh ./build.sh
+```
+
+### Building from source
+
+To build tiler, the following programs must be installed. You can skip the vice emulator if you are running on real hardware.
+
+```
+vice emulator  xvic
+assembler      64tass
+cruncher       exomizer
 ```
