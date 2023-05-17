@@ -7,43 +7,69 @@
 
 ### Instructions
 
-```
-x           enter character editor mode, or leave it
-spacebar    draw
-w a s d     movement
-semicolon   current char left
-quote       current char right
-c           copy world
-p           paste world
-b           bring up overlay, or squelch it
-g           increment background color
-h           increment border color
-z           flip character selection row, visible when overlay is displayed
-1-0         change color
-m           bucket fill
-escape      squelch overlay, or exit save/load mode
-f5          save scene and save charset
-f7          load scene and load charset
-```
-
-### Run the executable in the emulator
+#### In the main mode:
 
 ```
-xvic -memory all -ntsc -chdir . -9 your_disk_9.d64 -10 your_disk_10.d64 1201 tiler.prg
+x:         enter character editor mode, or leave it
+spacebar:  draw
+w a s d:   movement
+semicolon: current char left
+quote:     current char right
+c:         copy world
+p:         paste world
+b:         bring up overlay, or squelch it
+z:         flip character selection row in overlay
+g:         increment background color
+h:         increment border color
+1-0:       change color
+m:         bucket fill
+escape:    squelch overlay
+f5:        save
+f7:        load
 ```
 
-### Build the source and run the executable in the emulator
+#### In the character editor mode:
+
+```
+escape:    go to main mode
+x:         flip character like an x-ray
+spacebar:  draw
+w a s d:   movement
+semicolon: current char left
+quote:     current char right
+c:         copy character
+p:         paste character
+u:         limited undo
+k:         clear character and copy it
+1:         enable 1-character edit mode
+4:         enable 4-character edit mode
+y:         horizontal flip
+g:         increment background color
+h:         increment border color
+z:         flip character selection row
+1-0:       change color
+f5:        save
+f7:        load
+```
+
+#### In save or load mode:
+
+```
+escape:   exit
+return:   save or load
+f5 or f7: toggle between save/load screen and character set
+```
+
+### Build and run in the emulator
 
 ```
 sh ./build.sh
 ```
 
-### Building from source
-
-To build tiler, the following programs must be installed. You can skip the vice emulator if you are running on real hardware.
+To build tiler the following programs must be installed, with the exception of xvic:
 
 ```
-vice emulator  xvic
-assembler      64tass
-cruncher       exomizer
+vice emulator: xvic
+assembler:     64tass
+cruncher:      exomizer
 ```
