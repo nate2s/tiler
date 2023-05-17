@@ -1,6 +1,6 @@
-## <b>tiler</b> is a charset and screen editor for the VIC-20
+## <b>tiler</b> is a character set and screen editor for the VIC-20
 
-<b>tiler</b> lets you edit charsets and screens and save them to files so you can load them into your program.
+<b>tiler</b> lets you edit character sets and screens to use in your program.
 
 <img src="img/tiler1.png" width="300">
 <img src="img/tiler2.png" width="300">
